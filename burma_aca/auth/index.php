@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,17 +11,25 @@
 </head>
 
 <body>
-  <form action="home.php" method="POST">
-    <div>
-      <label for="user_name">User name</label>
-      <input type="text" name="user_name" id="user_name" />
-    </div>
-    <div>
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password" />
-    </div>
-    <button>Login</button>
-  </form>
+  <?php if ($_SESSION["logged_in"]) : ?>
+    <h1>Home Page</h1>
+    <h2>
+      <?php echo $_SESSION["user_name"] ?>
+    </h2>
+    <a href="logout.php">Logout</a>
+  <?php else: ?>
+    <form action="has_session.php" method="POST">
+      <div>
+        <label for="user_name">User name</label>
+        <input type="text" name="user_name" id="user_name" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <button>Login</button>
+    </form>
+  <?php endif; ?>
 </body>
 
 </html>
