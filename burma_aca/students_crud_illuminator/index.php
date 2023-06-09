@@ -1,0 +1,27 @@
+<?php
+require_once __DIR__ . "/vendor/autoload.php";
+
+use Illuminate\Database\Capsule\Manager as Database;
+
+$db = new Database;
+
+$db->addConnection([
+    'driver' => 'mysql',
+    'host' => 'localhost',
+    'database' => 'school',
+    'username' => 'root',
+    'password' => '',
+    'charset' => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix' => '',
+]);
+
+// Make this Capsule instance available globally via static methods... (optional)
+$db->setAsGlobal();
+
+// Setup the Eloquent ORM... (optional; unless you've used setEventDispatcher())
+$db->bootEloquent();
+
+$results = Database::table('students')->get();
+
+dd($results);
