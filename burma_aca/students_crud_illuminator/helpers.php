@@ -1,5 +1,4 @@
 <?php
-function dd($data)
-{
-  die(var_dump($data));
+function dd($content){
+  die(var_dump($content));
 };

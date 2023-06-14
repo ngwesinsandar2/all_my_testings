@@ -154,8 +154,8 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v10.13.2",
-            "version_normalized": "10.13.2.0",
+            "version": "v10.13.5",
+            "version_normalized": "10.13.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -212,8 +212,8 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v10.13.2",
-            "version_normalized": "10.13.2.0",
+            "version": "v10.13.5",
+            "version_normalized": "10.13.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -261,8 +261,8 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v10.13.2",
-            "version_normalized": "10.13.2.0",
+            "version": "v10.13.5",
+            "version_normalized": "10.13.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -315,17 +315,17 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v10.13.2",
-            "version_normalized": "10.13.2.0",
+            "version": "v10.13.5",
+            "version_normalized": "10.13.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "8cbe092c4474cb48233b234f722f7d1a5ac1b847"
+                "reference": "93605a5fc27cead6746d84796725c7c0d7d51d62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/8cbe092c4474cb48233b234f722f7d1a5ac1b847",
-                "reference": "8cbe092c4474cb48233b234f722f7d1a5ac1b847",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/93605a5fc27cead6746d84796725c7c0d7d51d62",
+                "reference": "93605a5fc27cead6746d84796725c7c0d7d51d62",
                 "shasum": ""
             },
             "require": {
@@ -333,7 +333,7 @@
                 "psr/container": "^1.1.1|^2.0.1",
                 "psr/simple-cache": "^1.0|^2.0|^3.0"
             },
-            "time": "2023-05-30T21:33:10+00:00",
+            "time": "2023-06-06T15:23:52+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -366,17 +366,17 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v10.13.2",
-            "version_normalized": "10.13.2.0",
+            "version": "v10.13.5",
+            "version_normalized": "10.13.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "6bcaea84ca44138d3df422ec616ea00aa378b398"
+                "reference": "adc3e9add8d533f98d85c9d7c6f2a4ae52ee5b3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/6bcaea84ca44138d3df422ec616ea00aa378b398",
-                "reference": "6bcaea84ca44138d3df422ec616ea00aa378b398",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/adc3e9add8d533f98d85c9d7c6f2a4ae52ee5b3c",
+                "reference": "adc3e9add8d533f98d85c9d7c6f2a4ae52ee5b3c",
                 "shasum": ""
             },
             "require": {
@@ -399,7 +399,7 @@
                 "illuminate/pagination": "Required to paginate the result set (^10.0).",
                 "symfony/finder": "Required to use Eloquent model factories (^6.2)."
             },
-            "time": "2023-06-05T12:47:27+00:00",
+            "time": "2023-06-08T13:45:57+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -438,8 +438,8 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v10.13.2",
-            "version_normalized": "10.13.2.0",
+            "version": "v10.13.5",
+            "version_normalized": "10.13.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -487,8 +487,8 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v10.13.2",
-            "version_normalized": "10.13.2.0",
+            "version": "v10.13.5",
+            "version_normalized": "10.13.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
