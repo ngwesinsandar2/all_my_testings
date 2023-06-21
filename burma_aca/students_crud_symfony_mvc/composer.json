@@ -1,0 +1,18 @@
+{
+    "name": "ngwesin/students_crud_illuminator",
+    "autoload": {
+        "files": ["helpers.php"],
+        "psr-4": {
+            "Source\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/database": "^10.13",
+        "symfony/http-foundation": "^6.3",
+        "symfony/var-dumper": "^6.3",
+        "symfony/event-dispatcher": "^6.3",
+        "symfony/routing": "^6.3",
+        "symfony/http-kernel": "^6.3",
+        "symfony/templating": "^6.3"
+    }
+}

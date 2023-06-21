@@ -17,13 +17,30 @@ $students = $db->read(Student::class);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Students Table -> Eloquent ORM</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <style>
+    .image_con {
+      width: 200px;
+      height: 200px;
+    }
+
+    .image_con img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container py-5">
     <div class="row justify-content-center align-items-center">
-      <div class="col-12 text-end mb-4">
-        <a href="./create.php" class="btn btn-primary">Create New Student</a>
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div class="image_con">
+          <img src="./assets/images/hanna.jpg" alt="" class="rounded" />
+        </div>
+        <div class="">
+          <a href="./create.php" class="btn btn-primary">Create New Student</a>
+        </div>
       </div>
 
       <div class="col-12">

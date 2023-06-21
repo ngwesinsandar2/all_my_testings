@@ -43,9 +43,11 @@ $student = $db->detail($_GET['id']);
             <?php foreach ($genders as $gender) : ?>
               <div class="d-flex">
                 <div class="mb-2">
-                  <input class="form-check-input" type="radio" name="gender_id" id="<?php echo $gender->name ?>" value="<?php echo $gender->id ?>">
-                  <label class="form-check-label text-uppercase" for="<?php echo $gender->name ?>">
-                    <?php echo $gender->name ?>
+                  <input class="form-check-input" <?php if ($gender->id === $student->gender_id) {
+                                                    echo "checked";
+                                                  } ?> type="radio" name="gender_id" id="<?php echo $gender->gender_name ?>" value="<?php echo $gender->id ?>">
+                  <label class="form-check-label text-uppercase" for="<?php echo $gender->gender_name ?>">
+                    <?php echo $gender->gender_name ?>
                   </label>
                 </div>
               </div>
@@ -67,9 +69,11 @@ $student = $db->detail($_GET['id']);
             <?php foreach ($courses as $course) : ?>
               <div class="d-flex">
                 <div class="mb-2">
-                  <input class="form-check-input" type="radio" name="course_id" id="<?php echo $course->name ?>" value="<?php echo $course->id ?>">
-                  <label class="form-check-label text-uppercase" for="<?php echo $course->name ?>">
-                    <?php echo $course->name ?>
+                  <input class="form-check-input" <?php if ($course->id === $student->course_id) {
+                                                    echo "checked";
+                                                  } ?> type="radio" name="course_id" id="<?php echo $course->course_name ?>" value="<?php echo $course->id ?>">
+                  <label class="form-check-label text-uppercase" for="<?php echo $course->course_name ?>">
+                    <?php echo $course->course_name ?>
                   </label>
                 </div>
               </div>

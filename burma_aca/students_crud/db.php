@@ -47,11 +47,11 @@ class DB
     VALUES (:name, :gender_id, :birth_date, :age, :email, :course_id);");
 
     $statement->bindParam(':name', $data['name']);
-    $statement->bindParam(':gender_id', $data['gender']);
+    $statement->bindParam(':gender_id', $data['gender_id']);
     $statement->bindParam(':birth_date', $data['birth_date']);
     $statement->bindParam(':age', $data['age']);
     $statement->bindParam(':email', $data['email']);
-    $statement->bindParam(':course_id', $data['course']);
+    $statement->bindParam(':course_id', $data['course_id']);
 
     if ($statement->execute()) {
       echo "New Student Created Success!";
@@ -68,11 +68,11 @@ class DB
 
     $statement->bindParam(':id', $id);
     $statement->bindParam(':name', $data['name']);
-    $statement->bindParam(':gender_id', $data['gender']);
+    $statement->bindParam(':gender_id', $data['gender_id']);
     $statement->bindParam(':birth_date', $data['birth_date']);
     $statement->bindParam(':age', $data['age']);
     $statement->bindParam(':email', $data['email']);
-    $statement->bindParam(':course_id', $data['course']);
+    $statement->bindParam(':course_id', $data['course_id']);
 
     if ($statement->execute()) {
       echo "Updated!";
