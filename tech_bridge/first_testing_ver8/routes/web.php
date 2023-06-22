@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/testing', function () {
+    return "<h1>Testing</h1>";
+});
+
+Route::get('/about', function () {
+    $name = "Leo Lame";
+    $age = 19;
+    $status = "single";
+
+    return view('about', compact("name", "age", "status"));
+});
+
+Route::get('profile', [ProfileController::class, "index"]);
